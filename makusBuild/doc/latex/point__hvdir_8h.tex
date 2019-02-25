@@ -1,0 +1,55 @@
+\hypertarget{point__hvdir_8h}{\section{point\-\_\-hvdir.\-h File Reference}
+\label{point__hvdir_8h}\index{point\-\_\-hvdir.\-h@{point\-\_\-hvdir.\-h}}
+}
+{\ttfamily \#include $<$pcl/point\-\_\-types.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structquanergy_1_1PointHVDIR}{quanergy\-::\-Point\-H\-V\-D\-I\-R}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacequanergy}{quanergy}
+\begin{DoxyCompactList}\small\item\em Variadic\-Packet\-Parer takes a list of parsers and iterates through them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}
+\item 
+\#define {\bfseries P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacequanergy_a5a41f05d8d5c5a29a41c0fe688ab7f0a}{struct \hyperlink{structquanergy_1_1PointHVDIR}{quanergy\-::\-Point\-H\-V\-D\-I\-R} {\bfseries quanergy\-::\-E\-I\-G\-E\-N\-\_\-\-A\-L\-I\-G\-N16}}\label{namespacequanergy_a5a41f05d8d5c5a29a41c0fe688ab7f0a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Point Cloud Library point structures for polar data with intensity and ring. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{point__hvdir_8h_a26d254d8a857829eb55f5a6336576e38}{\index{point\-\_\-hvdir.\-h@{point\-\_\-hvdir.\-h}!P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D@{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}}
+\index{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D@{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}!point_hvdir.h@{point\-\_\-hvdir.\-h}}
+\subsubsection[{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}}\label{point__hvdir_8h_a26d254d8a857829eb55f5a6336576e38}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+PCL\_ADD\_UNION\_POINT4D\_HVD \(\backslash\)
+  PCL\_ADD\_EIGEN\_MAPS\_POINT4D
+\end{DoxyCode}
+\hypertarget{point__hvdir_8h_a9b539aec1bae3fb14bd9371923c2d06f}{\index{point\-\_\-hvdir.\-h@{point\-\_\-hvdir.\-h}!P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D@{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}}
+\index{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D@{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}!point_hvdir.h@{point\-\_\-hvdir.\-h}}
+\subsubsection[{P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-C\-L\-\_\-\-A\-D\-D\-\_\-\-U\-N\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T4\-D\-\_\-\-H\-V\-D}}\label{point__hvdir_8h_a9b539aec1bae3fb14bd9371923c2d06f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{union }EIGEN\_ALIGN16 \{                 \(\backslash\)
+    float data[4];                      \(\backslash\)
+    struct \{                            \(\backslash\)
+      float h;                          \(\backslash\)
+      float v;                          \(\backslash\)
+      float d;                          \(\backslash\)
+    \};                                  \(\backslash\)
+  \};
+\end{DoxyCode}

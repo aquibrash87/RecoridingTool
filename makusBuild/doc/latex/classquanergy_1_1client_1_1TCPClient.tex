@@ -1,0 +1,97 @@
+\hypertarget{classquanergy_1_1client_1_1TCPClient}{\section{quanergy\-:\-:client\-:\-:T\-C\-P\-Client$<$ H\-E\-A\-D\-E\-R $>$ Class Template Reference}
+\label{classquanergy_1_1client_1_1TCPClient}\index{quanergy\-::client\-::\-T\-C\-P\-Client$<$ H\-E\-A\-D\-E\-R $>$@{quanergy\-::client\-::\-T\-C\-P\-Client$<$ H\-E\-A\-D\-E\-R $>$}}
+}
+
+
+\hyperlink{classquanergy_1_1client_1_1TCPClient}{T\-C\-P\-Client} is a generic T\-C\-P data receiver that outputs packets based on header.  
+
+
+
+
+{\ttfamily \#include $<$tcp\-\_\-client.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_accb45d0241bc624ad63cf538b1585303}{typedef std\-::shared\-\_\-ptr\\*
+$<$ std\-::vector$<$ char $>$ $>$ {\bfseries Result\-Type}}\label{classquanergy_1_1client_1_1TCPClient_accb45d0241bc624ad63cf538b1585303}
+
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a7b6902ce00b83a91c45162a7f718a64d}{typedef H\-E\-A\-D\-E\-R \hyperlink{classquanergy_1_1client_1_1TCPClient_a7b6902ce00b83a91c45162a7f718a64d}{Header\-Type}}\label{classquanergy_1_1client_1_1TCPClient_a7b6902ce00b83a91c45162a7f718a64d}
+
+\begin{DoxyCompactList}\small\item\em give access to H\-E\-A\-D\-E\-R to derived classes \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_aa1754d14fea33b06a40a63b42b0e560c}{typedef \\*
+boost\-::signals2\-::signal$<$ void(const \\*
+Result\-Type \&)$>$ \hyperlink{classquanergy_1_1client_1_1TCPClient_aa1754d14fea33b06a40a63b42b0e560c}{Signal}}\label{classquanergy_1_1client_1_1TCPClient_aa1754d14fea33b06a40a63b42b0e560c}
+
+\begin{DoxyCompactList}\small\item\em The packet is output on a signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a7caac3128ee9ac21709cdc1541018514}{\hyperlink{classquanergy_1_1client_1_1TCPClient_a7caac3128ee9ac21709cdc1541018514}{T\-C\-P\-Client} (std\-::string const \&host, std\-::string const \&port, std\-::size\-\_\-t max\-\_\-queue\-\_\-size=100)}\label{classquanergy_1_1client_1_1TCPClient_a7caac3128ee9ac21709cdc1541018514}
+
+\begin{DoxyCompactList}\small\item\em Constructor taking a host, port, and queue size. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a47e8a916773370abf09263ab56a4bd85}{{\bfseries T\-C\-P\-Client} (const \hyperlink{classquanergy_1_1client_1_1TCPClient}{T\-C\-P\-Client} \&)=delete}\label{classquanergy_1_1client_1_1TCPClient_a47e8a916773370abf09263ab56a4bd85}
+
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a25fe677b76c4cfb2bc9b2b9eeb65c088}{\hyperlink{classquanergy_1_1client_1_1TCPClient}{T\-C\-P\-Client} \& {\bfseries operator=} (const \hyperlink{classquanergy_1_1client_1_1TCPClient}{T\-C\-P\-Client} \&)=delete}\label{classquanergy_1_1client_1_1TCPClient_a25fe677b76c4cfb2bc9b2b9eeb65c088}
+
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a80d8ce7142ef21da286976194becd6a9}{boost\-::signals2\-::connection \hyperlink{classquanergy_1_1client_1_1TCPClient_a80d8ce7142ef21da286976194becd6a9}{connect} (const typename Signal\-::slot\-\_\-type \&subscriber)}\label{classquanergy_1_1client_1_1TCPClient_a80d8ce7142ef21da286976194becd6a9}
+
+\begin{DoxyCompactList}\small\item\em Connect a slot to the signal which will be emitted when a new R\-E\-S\-U\-L\-T is available. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_ade508b6561dce937cffbb43390ff23c2}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_ade508b6561dce937cffbb43390ff23c2}{run} ()}\label{classquanergy_1_1client_1_1TCPClient_ade508b6561dce937cffbb43390ff23c2}
+
+\begin{DoxyCompactList}\small\item\em Starts processing the Quanergy packets. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a96bbbcb279b343854262f521ac55ec86}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_a96bbbcb279b343854262f521ac55ec86}{stop} ()}\label{classquanergy_1_1client_1_1TCPClient_a96bbbcb279b343854262f521ac55ec86}
+
+\begin{DoxyCompactList}\small\item\em Stops processing the Quanergy packets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a682a68ceae7d329b9553436c42e5ab0a}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_a682a68ceae7d329b9553436c42e5ab0a}{start\-Data\-Connect} ()}\label{classquanergy_1_1client_1_1TCPClient_a682a68ceae7d329b9553436c42e5ab0a}
+
+\begin{DoxyCompactList}\small\item\em Asynchronously wait for connection. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a8f586dd803470de5c70a78d13c9ed66a}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_a8f586dd803470de5c70a78d13c9ed66a}{start\-Data\-Read} ()}\label{classquanergy_1_1client_1_1TCPClient_a8f586dd803470de5c70a78d13c9ed66a}
+
+\begin{DoxyCompactList}\small\item\em Asynchronously read from socket. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a6fef2c07f3985c5bc646933d58542475}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_a6fef2c07f3985c5bc646933d58542475}{handle\-Read\-Header} (const boost\-::system\-::error\-\_\-code \&error)}\label{classquanergy_1_1client_1_1TCPClient_a6fef2c07f3985c5bc646933d58542475}
+
+\begin{DoxyCompactList}\small\item\em Handle read of packet header. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_abe037d34a60b07c3af30cabecede4fdc}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_abe037d34a60b07c3af30cabecede4fdc}{handle\-Read\-Body} (const boost\-::system\-::error\-\_\-code \&error)}\label{classquanergy_1_1client_1_1TCPClient_abe037d34a60b07c3af30cabecede4fdc}
+
+\begin{DoxyCompactList}\small\item\em Handle read of packet body. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a2ad2a7e7f4d541a3b0b23cf6489e5ff1}{virtual void \hyperlink{classquanergy_1_1client_1_1TCPClient_a2ad2a7e7f4d541a3b0b23cf6489e5ff1}{signal\-Packets} ()}\label{classquanergy_1_1client_1_1TCPClient_a2ad2a7e7f4d541a3b0b23cf6489e5ff1}
+
+\begin{DoxyCompactList}\small\item\em Pulls packets off buffer queue and calls signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_a3169f1eb8c9ed9b452cd12ba4d51cd44}{std\-::unique\-\_\-ptr\\*
+$<$ boost\-::asio\-::ip\-::tcp\-::socket $>$ {\bfseries read\-\_\-socket\-\_\-}}\label{classquanergy_1_1client_1_1TCPClient_a3169f1eb8c9ed9b452cd12ba4d51cd44}
+
+\item 
+\hypertarget{classquanergy_1_1client_1_1TCPClient_ab99a028a1b6efe74a8f62ed1f9323449}{std\-::vector$<$ char $>$ {\bfseries buff\-\_\-}}\label{classquanergy_1_1client_1_1TCPClient_ab99a028a1b6efe74a8f62ed1f9323449}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class H\-E\-A\-D\-E\-R$>$class quanergy\-::client\-::\-T\-C\-P\-Client$<$ H\-E\-A\-D\-E\-R $>$}
+
+\hyperlink{classquanergy_1_1client_1_1TCPClient}{T\-C\-P\-Client} is a generic T\-C\-P data receiver that outputs packets based on header. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em H\-E\-A\-D\-E\-R} & is the packet header type \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyAttention}{Attention}
+The following two functions must be provided for H\-E\-A\-D\-E\-R type bool validate\-Header(const H\-E\-A\-D\-E\-R\&); // returns true if valid std\-::size\-\_\-t get\-Packet\-Size(const H\-E\-A\-D\-E\-R\&); // returns the size of the full packet including header 
+\end{DoxyAttention}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tcp__client_8h}{tcp\-\_\-client.\-h}\item 
+tcp\-\_\-client.\-hpp\end{DoxyCompactItemize}

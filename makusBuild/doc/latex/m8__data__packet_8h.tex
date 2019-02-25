@@ -1,0 +1,45 @@
+\hypertarget{m8__data__packet_8h}{\section{m8\-\_\-data\-\_\-packet.\-h File Reference}
+\label{m8__data__packet_8h}\index{m8\-\_\-data\-\_\-packet.\-h@{m8\-\_\-data\-\_\-packet.\-h}}
+}
+
+
+Provide definition of old m8 data packet.  
+
+
+{\ttfamily \#include $<$cstdint$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structquanergy_1_1client_1_1M8FiringData}{quanergy\-::client\-::\-M8\-Firing\-Data}
+\begin{DoxyCompactList}\small\item\em structure that holds the sensor firing output \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1M8DataPacket}{quanergy\-::client\-::\-M8\-Data\-Packet}
+\begin{DoxyCompactList}\small\item\em structure that holds multiple sensor firings and gets sent in the T\-C\-P packet \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacequanergy}{quanergy}
+\begin{DoxyCompactList}\small\item\em Variadic\-Packet\-Parer takes a list of parsers and iterates through them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Status\-Type} \-: std\-::uint16\-\_\-t \{ {\bfseries quanergy\-::client\-::\-Status\-Type\-::\-G\-O\-O\-D} = 0, 
+{\bfseries quanergy\-::client\-::\-Status\-Type\-::\-S\-E\-N\-S\-O\-R\-\_\-\-S\-W\-\_\-\-F\-W\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H} = 1 $<$$<$ 0, 
+{\bfseries quanergy\-::client\-::\-Status\-Type\-::\-W\-A\-T\-C\-H\-D\-O\-G\-\_\-\-V\-I\-O\-L\-A\-T\-I\-O\-N} = 1 $<$$<$ 1
+ \}
+\begin{DoxyCompactList}\small\item\em Status\-Type is a 16-\/bit bitfield that defines the know status flags possible in the M8\-Data\-Packet status field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacequanergy_1_1client_a7d1425c01b784ffcb9844f7e0a89bdf1}{const int {\bfseries quanergy\-::client\-::\-M8\-\_\-\-F\-I\-R\-I\-N\-G\-\_\-\-P\-E\-R\-\_\-\-P\-K\-T} = 50}\label{namespacequanergy_1_1client_a7d1425c01b784ffcb9844f7e0a89bdf1}
+
+\begin{DoxyCompactList}\small\item\em Default number of firings per T\-C\-P packet. \end{DoxyCompactList}\item 
+\hypertarget{namespacequanergy_1_1client_a8843be0085c60efbde95e35530ee5171}{const int {\bfseries quanergy\-::client\-::\-M8\-\_\-\-N\-U\-M\-\_\-\-R\-E\-T\-U\-R\-N\-S} = 3}\label{namespacequanergy_1_1client_a8843be0085c60efbde95e35530ee5171}
+
+\begin{DoxyCompactList}\small\item\em M8 packet supports multiecho return. \end{DoxyCompactList}\item 
+\hypertarget{namespacequanergy_1_1client_adb8f5d04638a29f4e7cc4cd6aff8a6ae}{const int {\bfseries quanergy\-::client\-::\-M8\-\_\-\-N\-U\-M\-\_\-\-L\-A\-S\-E\-R\-S} = 8}\label{namespacequanergy_1_1client_adb8f5d04638a29f4e7cc4cd6aff8a6ae}
+
+\begin{DoxyCompactList}\small\item\em The total number of lasers on the M8 Sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide definition of old m8 data packet. 

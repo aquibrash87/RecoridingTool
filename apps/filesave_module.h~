@@ -1,0 +1,51 @@
+#ifndef QUANERGY_CLIENT_FILESAVE_MODULE_H
+#define QUANERGY_CLIENT_FILESAVE_MODULE_H
+
+#include <quanergy/common/pointcloud_types.h>
+#include <string.h>
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <ctime>
+
+class FilesaveModule{
+public:
+	enum DataType{
+		Binary,
+		Text
+	};
+	enum TimestampType{
+		None,
+		Unix,
+		System
+	};
+
+	FilesaveModule(DataType dataType, const char* filename, TimestampType timestampType=TimestampType::None);
+	~FilesaveModule();
+
+	DataType _dataType;
+	TimestampType _timestampType;
+	char* _filename;
+
+	std::string _LastFilename;
+	int Filenumber;
+
+	std::string* Dirname = nullptr;
+
+	void slot(const quanergy::PointCloudXYZIRConstPtr& cloud);
+private:
+	std::string GetFilenameTimed(bool rgb);
+	static std::string GetUnixTimestamp();
+	static std::string GetSystemTimestamp();
+
+	cv::VideoCapture ipcam;
+	cv::Mat frame;
+	bool first = true;
+	time_t start, end;
+
+	void saveAsText(const quanergy::PointCloudXYZIRConstPtr& cloud);
+	void saveAsBinary(const quanergy::PointCloudXYZIRConstPtr& cloud);
+	
+	void saveRGB();
+};
+
+#endif

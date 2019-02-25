@@ -1,0 +1,47 @@
+\hypertarget{exceptions_8h}{\section{exceptions.\-h File Reference}
+\label{exceptions_8h}\index{exceptions.\-h@{exceptions.\-h}}
+}
+
+
+Define specific sensor client run-\/time exceptions.  
+
+
+{\ttfamily \#include $<$stdexcept$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structquanergy_1_1client_1_1SocketBindError}{quanergy\-::client\-::\-Socket\-Bind\-Error}
+\begin{DoxyCompactList}\small\item\em error binding to socket \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1SocketReadError}{quanergy\-::client\-::\-Socket\-Read\-Error}
+\begin{DoxyCompactList}\small\item\em error reading from socket \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1InvalidHeaderError}{quanergy\-::client\-::\-Invalid\-Header\-Error}
+\begin{DoxyCompactList}\small\item\em error parsing header \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1SizeMismatchError}{quanergy\-::client\-::\-Size\-Mismatch\-Error}
+\begin{DoxyCompactList}\small\item\em packet size doesn't match data description \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1InvalidPacketError}{quanergy\-::client\-::\-Invalid\-Packet\-Error}
+\begin{DoxyCompactList}\small\item\em Invalid packet. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1InvalidDataTypeError}{quanergy\-::client\-::\-Invalid\-Data\-Type\-Error}
+\begin{DoxyCompactList}\small\item\em Invalid data type in header; no parser available. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1InvalidDataVersionError}{quanergy\-::client\-::\-Invalid\-Data\-Version\-Error}
+\begin{DoxyCompactList}\small\item\em Invalid version for type. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1FirmwareVersionMismatchError}{quanergy\-::client\-::\-Firmware\-Version\-Mismatch\-Error}
+\begin{DoxyCompactList}\small\item\em Firmware versions on sensor don't match. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1FirmwareWatchdogViolationError}{quanergy\-::client\-::\-Firmware\-Watchdog\-Violation\-Error}
+\begin{DoxyCompactList}\small\item\em Firmware watchdog is not receiving an internal signal. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1FirmwareUnknownError}{quanergy\-::client\-::\-Firmware\-Unknown\-Error}
+\begin{DoxyCompactList}\small\item\em Firmware unknown error Raised for status bits that are not presently assigned. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1InvalidDegreesPerCloud}{quanergy\-::client\-::\-Invalid\-Degrees\-Per\-Cloud}
+\begin{DoxyCompactList}\small\item\em Degress per cloud must be 360 or less. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1InvalidReturnSelection}{quanergy\-::client\-::\-Invalid\-Return\-Selection}
+\begin{DoxyCompactList}\small\item\em Return selction must be less than M8\-\_\-\-N\-U\-M\-\_\-\-R\-E\-T\-U\-R\-N\-S. \end{DoxyCompactList}\item 
+struct \hyperlink{structquanergy_1_1client_1_1ReturnIDMismatchError}{quanergy\-::client\-::\-Return\-I\-D\-Mismatch\-Error}
+\begin{DoxyCompactList}\small\item\em Return I\-D coming from sensor doesn't match requested Return I\-D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacequanergy}{quanergy}
+\begin{DoxyCompactList}\small\item\em Variadic\-Packet\-Parer takes a list of parsers and iterates through them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Define specific sensor client run-\/time exceptions. 

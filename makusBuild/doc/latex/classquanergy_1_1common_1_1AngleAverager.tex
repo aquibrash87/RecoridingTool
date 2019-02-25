@@ -1,0 +1,68 @@
+\hypertarget{classquanergy_1_1common_1_1AngleAverager}{\section{quanergy\-:\-:common\-:\-:Angle\-Averager$<$ Scalar $>$ Class Template Reference}
+\label{classquanergy_1_1common_1_1AngleAverager}\index{quanergy\-::common\-::\-Angle\-Averager$<$ Scalar $>$@{quanergy\-::common\-::\-Angle\-Averager$<$ Scalar $>$}}
+}
+
+
+Class to average angles.  
+
+
+
+
+{\ttfamily \#include $<$angle.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classquanergy_1_1common_1_1AngleAverager_aac88135f8afaf698748c79f512636d6f}{accumulate} (Scalar angle)
+\begin{DoxyCompactList}\small\item\em Add angle to accumulated set to be averaged. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1common_1_1AngleAverager_ae522aa9e906029066267235ca93b5296}{void \hyperlink{classquanergy_1_1common_1_1AngleAverager_ae522aa9e906029066267235ca93b5296}{clear} ()}\label{classquanergy_1_1common_1_1AngleAverager_ae522aa9e906029066267235ca93b5296}
+
+\begin{DoxyCompactList}\small\item\em Clear accumulation. \end{DoxyCompactList}\item 
+\hypertarget{classquanergy_1_1common_1_1AngleAverager_a107400ae1eb2d2036b5f5b6da60fa987}{bool {\bfseries empty} () const }\label{classquanergy_1_1common_1_1AngleAverager_a107400ae1eb2d2036b5f5b6da60fa987}
+
+\item 
+Scalar \hyperlink{classquanergy_1_1common_1_1AngleAverager_a28d2d4a4e4b6ea57311822e51b4ccb5d}{avg} () const 
+\begin{DoxyCompactList}\small\item\em Get average angle. Implementation converts angles passed by \hyperlink{classquanergy_1_1common_1_1AngleAverager_aac88135f8afaf698748c79f512636d6f}{accumulate()} into cartesian coordinates on the unit circle. X and Y values for coordinate are averaged and the arctangent of these sums is returned as the average. If the sums of the X and Y values on the unit circle {\itshape both} equal zero, zero is returned as the average. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Scalar$>$class quanergy\-::common\-::\-Angle\-Averager$<$ Scalar $>$}
+
+Class to average angles. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classquanergy_1_1common_1_1AngleAverager_aac88135f8afaf698748c79f512636d6f}{\index{quanergy\-::common\-::\-Angle\-Averager@{quanergy\-::common\-::\-Angle\-Averager}!accumulate@{accumulate}}
+\index{accumulate@{accumulate}!quanergy::common::AngleAverager@{quanergy\-::common\-::\-Angle\-Averager}}
+\subsubsection[{accumulate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Scalar$>$ void {\bf quanergy\-::common\-::\-Angle\-Averager}$<$ Scalar $>$\-::accumulate (
+\begin{DoxyParamCaption}
+\item[{Scalar}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classquanergy_1_1common_1_1AngleAverager_aac88135f8afaf698748c79f512636d6f}
+
+
+Add angle to accumulated set to be averaged. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & Angle in radians. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classquanergy_1_1common_1_1AngleAverager_a28d2d4a4e4b6ea57311822e51b4ccb5d}{\index{quanergy\-::common\-::\-Angle\-Averager@{quanergy\-::common\-::\-Angle\-Averager}!avg@{avg}}
+\index{avg@{avg}!quanergy::common::AngleAverager@{quanergy\-::common\-::\-Angle\-Averager}}
+\subsubsection[{avg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Scalar$>$ Scalar {\bf quanergy\-::common\-::\-Angle\-Averager}$<$ Scalar $>$\-::avg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classquanergy_1_1common_1_1AngleAverager_a28d2d4a4e4b6ea57311822e51b4ccb5d}
+
+
+Get average angle. Implementation converts angles passed by \hyperlink{classquanergy_1_1common_1_1AngleAverager_aac88135f8afaf698748c79f512636d6f}{accumulate()} into cartesian coordinates on the unit circle. X and Y values for coordinate are averaged and the arctangent of these sums is returned as the average. If the sums of the X and Y values on the unit circle {\itshape both} equal zero, zero is returned as the average. 
+
+\begin{DoxyReturn}{Returns}
+Average angle in radians. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+angle.\-h\end{DoxyCompactItemize}

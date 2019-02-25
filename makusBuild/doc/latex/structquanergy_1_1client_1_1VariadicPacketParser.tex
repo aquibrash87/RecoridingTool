@@ -1,0 +1,35 @@
+\hypertarget{structquanergy_1_1client_1_1VariadicPacketParser}{\section{quanergy\-:\-:client\-:\-:Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$ Struct Template Reference}
+\label{structquanergy_1_1client_1_1VariadicPacketParser}\index{quanergy\-::client\-::\-Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$@{quanergy\-::client\-::\-Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$}}
+}
+Inheritance diagram for quanergy\-:\-:client\-:\-:Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structquanergy_1_1client_1_1VariadicPacketParser}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1VariadicPacketParser_aad48760d6d29342cf8358371b2fea630}{typedef R\-E\-S\-U\-L\-T {\bfseries Result\-Type}}\label{structquanergy_1_1client_1_1VariadicPacketParser_aad48760d6d29342cf8358371b2fea630}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1VariadicPacketParser_a76139502de94d8f94bc9d5b9ac749695}{{\footnotesize template$<$std\-::size\-\_\-t I$>$ }\\auto \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_a76139502de94d8f94bc9d5b9ac749695}{get} () -\/$>$ decltype(std\-::get$<$ I $>$(std\-::tuple$<$ P\-A\-R\-S\-E\-R\-S...$>$()))\&}\label{structquanergy_1_1client_1_1VariadicPacketParser_a76139502de94d8f94bc9d5b9ac749695}
+
+\begin{DoxyCompactList}\small\item\em provide access to the individual parsers \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1VariadicPacketParser_a58a6ec899ab3ee7f2fbd92b4d45082eb}{virtual bool \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_a58a6ec899ab3ee7f2fbd92b4d45082eb}{validate\-Parse} (const std\-::vector$<$ char $>$ \&packet, R\-E\-S\-U\-L\-T \&result)}\label{structquanergy_1_1client_1_1VariadicPacketParser_a58a6ec899ab3ee7f2fbd92b4d45082eb}
+
+\begin{DoxyCompactList}\small\item\em iterate through parsers to find first match and parse \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1VariadicPacketParser_a5b53284ba762fc0d9355d28f552bd674}{virtual bool \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_a5b53284ba762fc0d9355d28f552bd674}{validate} (const std\-::vector$<$ char $>$ \&packet)}\label{structquanergy_1_1client_1_1VariadicPacketParser_a5b53284ba762fc0d9355d28f552bd674}
+
+\begin{DoxyCompactList}\small\item\em iterate through parsers to see if there is a match \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1VariadicPacketParser_af66c0c1212314c43f6a183e7a4711e44}{virtual bool \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_af66c0c1212314c43f6a183e7a4711e44}{parse} (const std\-::vector$<$ char $>$ \&packet, R\-E\-S\-U\-L\-T \&result)}\label{structquanergy_1_1client_1_1VariadicPacketParser_af66c0c1212314c43f6a183e7a4711e44}
+
+\begin{DoxyCompactList}\small\item\em parse using validate\-Parse but catch throw \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{variadic__packet__parser_8h}{variadic\-\_\-packet\-\_\-parser.\-h}\end{DoxyCompactItemize}

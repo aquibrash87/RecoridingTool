@@ -1,0 +1,65 @@
+\hypertarget{structquanergy_1_1client_1_1DataPacketParser04}{\section{quanergy\-:\-:client\-:\-:Data\-Packet\-Parser04 Struct Reference}
+\label{structquanergy_1_1client_1_1DataPacketParser04}\index{quanergy\-::client\-::\-Data\-Packet\-Parser04@{quanergy\-::client\-::\-Data\-Packet\-Parser04}}
+}
+Inheritance diagram for quanergy\-:\-:client\-:\-:Data\-Packet\-Parser04\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{structquanergy_1_1client_1_1DataPacketParser04}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structquanergy_1_1client_1_1DataPacketParser04_a4f8566ff529171e458ab2139c9098403}{validate} (const std\-::vector$<$ char $>$ \&packet)
+\begin{DoxyCompactList}\small\item\em check packet validity \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParser04_aa4d5c0f05ceb47c1fa5abdbb2a6ceae1}{bool {\bfseries parse} (\hyperlink{structquanergy_1_1client_1_1DataPacket04}{Data\-Packet04} const \&data\-\_\-packet, Point\-Cloud\-H\-V\-D\-I\-R\-Ptr \&result)}\label{structquanergy_1_1client_1_1DataPacketParser04_aa4d5c0f05ceb47c1fa5abdbb2a6ceae1}
+
+\item 
+bool \hyperlink{structquanergy_1_1client_1_1DataPacketParser04_a62df767eabc53340282c4f3cb5fec9e0}{parse} (const std\-::vector$<$ char $>$ \&packet, Point\-Cloud\-H\-V\-D\-I\-R\-Ptr \&result)
+\begin{DoxyCompactList}\small\item\em parse packet and update result \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structquanergy_1_1client_1_1DataPacketParser04_a62df767eabc53340282c4f3cb5fec9e0}{\index{quanergy\-::client\-::\-Data\-Packet\-Parser04@{quanergy\-::client\-::\-Data\-Packet\-Parser04}!parse@{parse}}
+\index{parse@{parse}!quanergy::client::DataPacketParser04@{quanergy\-::client\-::\-Data\-Packet\-Parser04}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool quanergy\-::client\-::\-Data\-Packet\-Parser04\-::parse (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ char $>$ \&}]{packet, }
+\item[{Point\-Cloud\-H\-V\-D\-I\-R\-Ptr \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structquanergy_1_1client_1_1DataPacketParser04_a62df767eabc53340282c4f3cb5fec9e0}
+
+
+parse packet and update result 
+
+\begin{DoxyReturn}{Returns}
+true if result updated; false otherwise (some parsers may require multiple packets before updating result) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{structquanergy_1_1client_1_1PacketParserBase_a4a0555355f550738007edf7994da1c8c}{quanergy\-::client\-::\-Packet\-Parser\-Base$<$ Point\-Cloud\-H\-V\-D\-I\-R\-Ptr $>$}.
+
+\hypertarget{structquanergy_1_1client_1_1DataPacketParser04_a4f8566ff529171e458ab2139c9098403}{\index{quanergy\-::client\-::\-Data\-Packet\-Parser04@{quanergy\-::client\-::\-Data\-Packet\-Parser04}!validate@{validate}}
+\index{validate@{validate}!quanergy::client::DataPacketParser04@{quanergy\-::client\-::\-Data\-Packet\-Parser04}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}bool quanergy\-::client\-::\-Data\-Packet\-Parser04\-::validate (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ char $>$ \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{structquanergy_1_1client_1_1DataPacketParser04_a4f8566ff529171e458ab2139c9098403}
+
+
+check packet validity 
+
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{structquanergy_1_1client_1_1PacketParserBase_ad840fd4e7f3ab054024957ae1d94ffa1}{quanergy\-::client\-::\-Packet\-Parser\-Base$<$ Point\-Cloud\-H\-V\-D\-I\-R\-Ptr $>$}.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data__packet__parser__04_8h}{data\-\_\-packet\-\_\-parser\-\_\-04.\-h}\end{DoxyCompactItemize}

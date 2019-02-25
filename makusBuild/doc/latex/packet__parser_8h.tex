@@ -1,0 +1,27 @@
+\hypertarget{packet__parser_8h}{\section{packet\-\_\-parser.\-h File Reference}
+\label{packet__parser_8h}\index{packet\-\_\-parser.\-h@{packet\-\_\-parser.\-h}}
+}
+
+
+Provide base packet parser functionality.  
+
+
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$boost/signals2.\-hpp$>$}\\*
+{\ttfamily \#include $<$quanergy/client/exceptions.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structquanergy_1_1client_1_1PacketParserModule}{quanergy\-::client\-::\-Packet\-Parser\-Module$<$ P\-A\-R\-S\-E\-R $>$}
+\item 
+struct \hyperlink{structquanergy_1_1client_1_1PacketParserBase}{quanergy\-::client\-::\-Packet\-Parser\-Base$<$ R\-E\-S\-U\-L\-T $>$}
+\begin{DoxyCompactList}\small\item\em base class for packet parsers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacequanergy}{quanergy}
+\begin{DoxyCompactList}\small\item\em Variadic\-Packet\-Parer takes a list of parsers and iterates through them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide base packet parser functionality. Individual message types will need to specialize the functionality provided here. 

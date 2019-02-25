@@ -1,0 +1,36 @@
+\hypertarget{data__packet__00_8h}{\section{data\-\_\-packet\-\_\-00.\-h File Reference}
+\label{data__packet__00_8h}\index{data\-\_\-packet\-\_\-00.\-h@{data\-\_\-packet\-\_\-00.\-h}}
+}
+
+
+Provide deserialization functionality for data packet type 0x00.  
+
+
+{\ttfamily \#include $<$quanergy/client/packet\-\_\-header.\-h$>$}\\*
+{\ttfamily \#include $<$quanergy/client/m8\-\_\-data\-\_\-packet.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structquanergy_1_1client_1_1DataPacket00}{quanergy\-::client\-::\-Data\-Packet00}
+\begin{DoxyCompactList}\small\item\em data packet 0x00 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacequanergy}{quanergy}
+\begin{DoxyCompactList}\small\item\em Variadic\-Packet\-Parer takes a list of parsers and iterates through them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacequanergy_1_1client_a48e49604e5c7bf2353ebfc944ad8df09}{D\-L\-L\-E\-X\-P\-O\-R\-T void {\bfseries quanergy\-::client\-::deserialize} (const char $\ast$network\-\_\-buffer, M8\-Firing\-Data \&object)}\label{namespacequanergy_1_1client_a48e49604e5c7bf2353ebfc944ad8df09}
+
+\item 
+\hypertarget{namespacequanergy_1_1client_adb99314ce6a8d192c217a123d3980c02}{D\-L\-L\-E\-X\-P\-O\-R\-T void {\bfseries quanergy\-::client\-::deserialize} (const char $\ast$network\-\_\-buffer, M8\-Data\-Packet \&object)}\label{namespacequanergy_1_1client_adb99314ce6a8d192c217a123d3980c02}
+
+\item 
+\hypertarget{namespacequanergy_1_1client_ac1d6806171496fac59dd734b6e498bf7}{D\-L\-L\-E\-X\-P\-O\-R\-T void {\bfseries quanergy\-::client\-::deserialize} (const char $\ast$network\-\_\-buffer, Data\-Packet00 \&object)}\label{namespacequanergy_1_1client_ac1d6806171496fac59dd734b6e498bf7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide deserialization functionality for data packet type 0x00. data packet 00 is a wrapper for the old m8 data with the new header. 

@@ -1,0 +1,95 @@
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8}{\section{quanergy\-:\-:client\-:\-:Data\-Packet\-Parser\-M8 Struct Reference}
+\label{structquanergy_1_1client_1_1DataPacketParserM8}\index{quanergy\-::client\-::\-Data\-Packet\-Parser\-M8@{quanergy\-::client\-::\-Data\-Packet\-Parser\-M8}}
+}
+
+
+Not a specialization because it is intended to be used by others.  
+
+
+
+
+{\ttfamily \#include $<$data\-\_\-packet\-\_\-parser\-\_\-m8.\-h$>$}
+
+Inheritance diagram for quanergy\-:\-:client\-:\-:Data\-Packet\-Parser\-M8\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.128492cm]{structquanergy_1_1client_1_1DataPacketParserM8}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a3d55d291d44be412eb30982c109c9b26}{bool {\bfseries parse} (const \hyperlink{structquanergy_1_1client_1_1M8DataPacket}{M8\-Data\-Packet} \&data\-\_\-packet, Point\-Cloud\-H\-V\-D\-I\-R\-Ptr \&result)}\label{structquanergy_1_1client_1_1DataPacketParserM8_a3d55d291d44be412eb30982c109c9b26}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_aff75b6e5c7965909ac77080f289770b8}{void {\bfseries set\-Return\-Selection} (int return\-\_\-selection)}\label{structquanergy_1_1client_1_1DataPacketParserM8_aff75b6e5c7965909ac77080f289770b8}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a6f64769dfea51dbc43691f5ff43e8b0b}{void {\bfseries set\-Cloud\-Size\-Limits} (std\-::int32\-\_\-t szmin, std\-::int32\-\_\-t szmax)}\label{structquanergy_1_1client_1_1DataPacketParserM8_a6f64769dfea51dbc43691f5ff43e8b0b}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_aea770e4f27886c7fff318fb72535ed8d}{void {\bfseries set\-Degrees\-Of\-Sweep\-Per\-Cloud} (double degrees\-\_\-per\-\_\-cloud)}\label{structquanergy_1_1client_1_1DataPacketParserM8_aea770e4f27886c7fff318fb72535ed8d}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_ae919de33ff1688037d4aff2a5c668284}{double {\bfseries get\-Degrees\-Of\-Sweep\-Per\-Cloud} () const }\label{structquanergy_1_1client_1_1DataPacketParserM8_ae919de33ff1688037d4aff2a5c668284}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a07831058de6fe2804b51d6a1ff9394c4}{static void {\bfseries organize\-Cloud} (Point\-Cloud\-H\-V\-D\-I\-R\-Ptr \&current\-\_\-pc, Point\-Cloud\-H\-V\-D\-I\-R\-Ptr \&temp\-\_\-pc)}\label{structquanergy_1_1client_1_1DataPacketParserM8_a07831058de6fe2804b51d6a1ff9394c4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a6e7825f339f311dc6cf4fbad4d1df44b}{uint32\-\_\-t \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a6e7825f339f311dc6cf4fbad4d1df44b}{packet\-\_\-counter\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a6e7825f339f311dc6cf4fbad4d1df44b}
+
+\begin{DoxyCompactList}\small\item\em global packet counter \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_aac2fa9bb2410d065a16cb32458d134b3}{uint32\-\_\-t \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_aac2fa9bb2410d065a16cb32458d134b3}{cloud\-\_\-counter\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_aac2fa9bb2410d065a16cb32458d134b3}
+
+\begin{DoxyCompactList}\small\item\em global cloud counter \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a58460ac04bc0d7bc1b410e09a06e5692}{double \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a58460ac04bc0d7bc1b410e09a06e5692}{last\-\_\-azimuth\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a58460ac04bc0d7bc1b410e09a06e5692}
+
+\begin{DoxyCompactList}\small\item\em last accounted for azimuth angle \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a1edb9bd53f79f9bc0af0772dc08726d2}{std\-::uint64\-\_\-t \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a1edb9bd53f79f9bc0af0772dc08726d2}{previous\-\_\-packet\-\_\-stamp\-\_\-} = 0}\label{structquanergy_1_1client_1_1DataPacketParserM8_a1edb9bd53f79f9bc0af0772dc08726d2}
+
+\begin{DoxyCompactList}\small\item\em timestamp of previous data packet (microseconds) \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a6e32df4d489bc2989d57222eb0989f28}{Point\-Cloud\-H\-V\-D\-I\-R\-Ptr {\bfseries current\-\_\-cloud\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a6e32df4d489bc2989d57222eb0989f28}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_aeb0372aa04c7848f9db3335a8d248658}{Point\-Cloud\-H\-V\-D\-I\-R\-Ptr {\bfseries worker\-\_\-cloud\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_aeb0372aa04c7848f9db3335a8d248658}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a7fa907a63e2f43927540366f20a4c379}{std\-::vector$<$ double $>$ \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a7fa907a63e2f43927540366f20a4c379}{horizontal\-\_\-angle\-\_\-lookup\-\_\-table\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a7fa907a63e2f43927540366f20a4c379}
+
+\begin{DoxyCompactList}\small\item\em lookup table for horizontal angle \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a2f4b38c7647e7fc5196f82bd84b7b93d}{double \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a2f4b38c7647e7fc5196f82bd84b7b93d}{vertical\-\_\-angle\-\_\-lookup\-\_\-table\-\_\-} \mbox{[}M8\-\_\-\-N\-U\-M\-\_\-\-L\-A\-S\-E\-R\-S\mbox{]}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a2f4b38c7647e7fc5196f82bd84b7b93d}
+
+\begin{DoxyCompactList}\small\item\em lookup table for vertical angle \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_adbfa45df9611f3aff9c94fef46c8129f}{int \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_adbfa45df9611f3aff9c94fef46c8129f}{return\-\_\-selection\-\_\-} = 0}\label{structquanergy_1_1client_1_1DataPacketParserM8_adbfa45df9611f3aff9c94fef46c8129f}
+
+\begin{DoxyCompactList}\small\item\em return selection \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_ae1fe07e2deb0a1f81e94d1c19a45303b}{std\-::int32\-\_\-t \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_ae1fe07e2deb0a1f81e94d1c19a45303b}{minimum\-\_\-cloud\-\_\-size\-\_\-} = 1}\label{structquanergy_1_1client_1_1DataPacketParserM8_ae1fe07e2deb0a1f81e94d1c19a45303b}
+
+\begin{DoxyCompactList}\small\item\em cloud size limits \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a905ad66be49de4168f9997a8bd530f84}{std\-::int32\-\_\-t {\bfseries maximum\-\_\-cloud\-\_\-size\-\_\-} = 1\-E6}\label{structquanergy_1_1client_1_1DataPacketParserM8_a905ad66be49de4168f9997a8bd530f84}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a595251e17f0542f93563398c2ccad31e}{double \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a595251e17f0542f93563398c2ccad31e}{start\-\_\-azimuth\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a595251e17f0542f93563398c2ccad31e}
+
+\begin{DoxyCompactList}\small\item\em cloud degrees of sweep \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a6c7c7adf5f968c6e59a505d4aa234fdc}{double {\bfseries degrees\-\_\-per\-\_\-cloud\-\_\-}}\label{structquanergy_1_1client_1_1DataPacketParserM8_a6c7c7adf5f968c6e59a505d4aa234fdc}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1DataPacketParserM8_a5f9e9890b2f0903472d9deedfa5031d9}{int \hyperlink{structquanergy_1_1client_1_1DataPacketParserM8_a5f9e9890b2f0903472d9deedfa5031d9}{direction\-\_\-} = 1}\label{structquanergy_1_1client_1_1DataPacketParserM8_a5f9e9890b2f0903472d9deedfa5031d9}
+
+\begin{DoxyCompactList}\small\item\em direction \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Not a specialization because it is intended to be used by others. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{data__packet__parser__m8_8h}{data\-\_\-packet\-\_\-parser\-\_\-m8.\-h}\end{DoxyCompactItemize}

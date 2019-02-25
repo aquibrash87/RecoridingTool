@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>QuanergyClient@makusBuild</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value>-j8</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/makusBuild</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/makusBuild</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/Source Files/test_encoder_angle_calibration.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/test/test_encoder_angle_calibration.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] test_quanergy_client/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/polar_to_cart_converter.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/modules/polar_to_cart_converter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/distance_filter.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/modules/distance_filter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/ring_intensity_filter.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/modules/ring_intensity_filter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/encoder_angle_calibration.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/modules/encoder_angle_calibration.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/point_xyz.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/common/point_xyz.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/point_xyzir.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/common/point_xyzir.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/data_packet_parser_00.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/parsers/data_packet_parser_00.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/data_packet_parser_01.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/parsers/data_packet_parser_01.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/data_packet_parser_04.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/parsers/data_packet_parser_04.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Source Files/data_packet_parser_m8.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/src/parsers/data_packet_parser_m8.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/pointcloud_types.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/common/pointcloud_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/point_xyz.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/common/point_xyz.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/point_xyzir.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/common/point_xyzir.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/angle.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/common/angle.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/point_hvdir.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/common/point_hvdir.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_01.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_01.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/variadic_packet_parser.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/variadic_packet_parser.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_00.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_00.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_parser.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_parser.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_parser_04.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_parser_04.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_parser_00.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_parser_00.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_parser_01.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_parser_01.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_04.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_04.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/packet_parser.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/packet_parser.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/data_packet_parser_m8.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/parsers/data_packet_parser_m8.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/polar_to_cart_converter.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/modules/polar_to_cart_converter.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/ring_intensity_filter.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/modules/ring_intensity_filter.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/encoder_angle_calibration.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/modules/encoder_angle_calibration.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/distance_filter.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/modules/distance_filter.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/m8_data_packet.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/m8_data_packet.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/tcp_client.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/tcp_client.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/version.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/version.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/packet_header.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/packet_header.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/sensor_client.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/sensor_client.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/exceptions.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/exceptions.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/filesave_module.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/apps/filesave_module.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/visualizer_module.h</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/apps/visualizer_module.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Header Files/tcp_client.hpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/include/quanergy/client/impl/tcp_client.hpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] quanergy_client/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Source Files/visualizer.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/apps/visualizer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Source Files/visualizer_module.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/apps/visualizer_module.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Source Files/filesave_module.cpp</name>
+			<type>1</type>
+			<location>/home/fraunhofer/workspace/QuanergySystems/quanergy_client/apps/filesave_module.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] visualizer/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

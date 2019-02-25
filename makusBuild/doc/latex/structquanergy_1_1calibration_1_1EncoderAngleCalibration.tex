@@ -1,0 +1,246 @@
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration}{\section{quanergy\-:\-:calibration\-:\-:Encoder\-Angle\-Calibration Struct Reference}
+\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration}\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+}
+
+
+This class calculates the error in the encoder angles and returns the amplitude and phase shift of the sine function modeling the error in the encoder angles for the M8 Sensor. This class can also be provided with the sine error parameters and apply the calibration to incoming points.  
+
+
+
+
+{\ttfamily \#include $<$encoder\-\_\-angle\-\_\-calibration.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ad2e08ae4ae94662029c907d43c5f879c}{Angle\-Container} = std\-::vector$<$ double $>$
+\item 
+using \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a989e77cbef9730169908a437323a96c2}{Sine\-Parameters} = std\-::pair$<$ double, double $>$
+\item 
+using \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aa41576cd5cbf0b1d917a9a781be9e308}{Line\-Parameters} = std\-::pair$<$ double, double $>$
+\item 
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ae50457c8a6ce95e6c44c3aa32659ee40}{using \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ae50457c8a6ce95e6c44c3aa32659ee40}{Ptr} = std\-::shared\-\_\-ptr$<$ \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration}{Encoder\-Angle\-Calibration} $>$}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ae50457c8a6ce95e6c44c3aa32659ee40}
+
+\begin{DoxyCompactList}\small\item\em Short-\/hand for point types. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a32f20fa67f6d6bff7b21b76f695489f7}{using \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a32f20fa67f6d6bff7b21b76f695489f7}{Result\-Type} = Point\-Cloud\-H\-V\-D\-I\-R\-Ptr}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a32f20fa67f6d6bff7b21b76f695489f7}
+
+\begin{DoxyCompactList}\small\item\em Result type for class. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aeb5bc875838932085c43143e44a2942a}{using \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aeb5bc875838932085c43143e44a2942a}{Signal} = boost\-::signals2\-::signal$<$ void(const \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a32f20fa67f6d6bff7b21b76f695489f7}{Result\-Type} \&)$>$}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aeb5bc875838932085c43143e44a2942a}
+
+\begin{DoxyCompactList}\small\item\em Signal type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a4c86719a8e5a36a1b14dba38e5bd4901}{\hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a4c86719a8e5a36a1b14dba38e5bd4901}{Encoder\-Angle\-Calibration} ()}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a4c86719a8e5a36a1b14dba38e5bd4901}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0fa758e2353874d4d8a2d49c28fce4ba}{\hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0fa758e2353874d4d8a2d49c28fce4ba}{$\sim$\-Encoder\-Angle\-Calibration} ()}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0fa758e2353874d4d8a2d49c28fce4ba}
+
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\item 
+boost\-::signals2\-::connection \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a1b1d924f8633dcb48898c32d7fabf651}{connect} (const T\-Y\-P\-E\-N\-A\-M\-E Signal\-::slot\-\_\-type \&subscriber)
+\begin{DoxyCompactList}\small\item\em Adds subscriber to be called after this classes functionality is done. \end{DoxyCompactList}\item 
+void \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ac73746735a610fe7f4b9a261f5eabf9f}{slot} (Point\-Cloud\-H\-V\-D\-I\-R\-Ptr const \&pc)
+\begin{DoxyCompactList}\small\item\em Slot to be connected as a subscriber to another process. If calibration is not complete, this function will add the point cloud argument to the cloud to be used for calibration. If calibration is complete, this function will apply the calibration and call the next subscriber. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_acd0f552b95aa74d0738d7c5d7e89d1fa}{void \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_acd0f552b95aa74d0738d7c5d7e89d1fa}{calibrate\-Only} ()}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_acd0f552b95aa74d0738d7c5d7e89d1fa}
+
+\begin{DoxyCompactList}\small\item\em Sets this class to only calculate the error parameters and not apply the calibration. This mode is for when the caller wants to look at multiple calculations for the amplitude and phase. \end{DoxyCompactList}\item 
+void \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aa86be4f4d781cad40afab05f40ad78d6}{set\-Required\-Num\-Samples} (double num\-\_\-cals)
+\begin{DoxyCompactList}\small\item\em Sets number of valid calibrations to be collected before averaging. Validity is determined by change in phase between current sample and previous sample. \end{DoxyCompactList}\item 
+void \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0f9d48e2c8ccaf03647dde2666985819}{set\-Params} (double amplitude, double phase)
+\begin{DoxyCompactList}\small\item\em Function to manually set calibration parameters. Calling this function will disable the automatic calibration and subsequent calls to slot will apply the calibration and call the subscriber. \end{DoxyCompactList}\item 
+void \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a8fe3b279f9dbed5e17e91bbe4271943d}{set\-Frame\-Rate} (double frame\-\_\-rate)
+\begin{DoxyCompactList}\small\item\em Function to set frame rate. Value is in frames per second. If not set, the default is 10. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Rep , typename Period $>$ }\\void \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a478a432ee011bab690954869f8638ce1}{set\-Timeout} (const std\-::chrono\-::duration$<$ Rep, Period $>$ \&timeout)
+\begin{DoxyCompactList}\small\item\em Sets timeout for calculating the calibration. If the timeout expires this class will throw an exception. \end{DoxyCompactList}\item 
+\hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a989e77cbef9730169908a437323a96c2}{Sine\-Parameters} \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a2c4dc14bab7cad0d55e9466e044424a2}{calculate} (const std\-::vector$<$ double $>$ \&encoder\-\_\-angles)
+\begin{DoxyCompactList}\small\item\em Function to calculate the sinusoidal error of the horizontal encoder values. This function is called once a full revolution of the encoder is captured. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a76aedeeacc4ac54b5fa1324a144abaf6}{F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E}
+\item 
+static const int \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a78466d125a2b3c71199e06bb8f433738}{E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}
+\item 
+static const int \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_abe79c88a1e3a3e42796a225e34c1d67f}{M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}
+\item 
+static const int \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ab42e578d8a1c168e7d75506faad03dc2}{M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}
+\item 
+static const double \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a934b8f1f5c14ed61c7ba6bc5e01ddd5b}{P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}
+\item 
+static const int \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0d42f1ff560d67d491511970960f0cfa}{M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D}
+\item 
+static const double \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a12436409c1f1f10f4c005e45fcfbfbf2}{P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}
+\item 
+static const double \hyperlink{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a1b9a418e7547fb16216a839a0f605b47}{A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class calculates the error in the encoder angles and returns the amplitude and phase shift of the sine function modeling the error in the encoder angles for the M8 Sensor. This class can also be provided with the sine error parameters and apply the calibration to incoming points. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ad2e08ae4ae94662029c907d43c5f879c}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!Angle\-Container@{Angle\-Container}}
+\index{Angle\-Container@{Angle\-Container}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{Angle\-Container}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-Angle\-Container} =  std\-::vector$<$double$>$}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ad2e08ae4ae94662029c907d43c5f879c}
+The type of the container that contains the encoder angles \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aa41576cd5cbf0b1d917a9a781be9e308}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!Line\-Parameters@{Line\-Parameters}}
+\index{Line\-Parameters@{Line\-Parameters}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{Line\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-Line\-Parameters} =  std\-::pair$<$double, double$>$}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aa41576cd5cbf0b1d917a9a781be9e308}
+This type holds the parameters of a 2d line \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a989e77cbef9730169908a437323a96c2}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!Sine\-Parameters@{Sine\-Parameters}}
+\index{Sine\-Parameters@{Sine\-Parameters}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{Sine\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-Sine\-Parameters} =  std\-::pair$<$double, double$>$}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a989e77cbef9730169908a437323a96c2}
+This type holds the parameters of the sine wave. The amplitude is the first element of the pair, the phase is the second element. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a2c4dc14bab7cad0d55e9466e044424a2}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!calculate@{calculate}}
+\index{calculate@{calculate}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{calculate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sine\-Parameters} quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::calculate (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ double $>$ \&}]{encoder\-\_\-angles}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a2c4dc14bab7cad0d55e9466e044424a2}
+
+
+Function to calculate the sinusoidal error of the horizontal encoder values. This function is called once a full revolution of the encoder is captured. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em encoder\-\_\-angles} & Encoder angles\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tuple with first element as the amplitude of the sinusoid and second element as the phase offset of the sinusoid. 
+\end{DoxyReturn}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a1b1d924f8633dcb48898c32d7fabf651}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!connect@{connect}}
+\index{connect@{connect}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::signals2\-::connection quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::connect (
+\begin{DoxyParamCaption}
+\item[{const T\-Y\-P\-E\-N\-A\-M\-E Signal\-::slot\-\_\-type \&}]{subscriber}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a1b1d924f8633dcb48898c32d7fabf651}
+
+
+Adds subscriber to be called after this classes functionality is done. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em subscriber} & Subscriber to be called.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+connection between this class and subscriber 
+\end{DoxyReturn}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a8fe3b279f9dbed5e17e91bbe4271943d}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!set\-Frame\-Rate@{set\-Frame\-Rate}}
+\index{set\-Frame\-Rate@{set\-Frame\-Rate}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{set\-Frame\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}void quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::set\-Frame\-Rate (
+\begin{DoxyParamCaption}
+\item[{double}]{frame\-\_\-rate}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a8fe3b279f9dbed5e17e91bbe4271943d}
+
+
+Function to set frame rate. Value is in frames per second. If not set, the default is 10. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em frame\-\_\-rate} & frame rate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0f9d48e2c8ccaf03647dde2666985819}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!set\-Params@{set\-Params}}
+\index{set\-Params@{set\-Params}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{set\-Params}]{\setlength{\rightskip}{0pt plus 5cm}void quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::set\-Params (
+\begin{DoxyParamCaption}
+\item[{double}]{amplitude, }
+\item[{double}]{phase}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0f9d48e2c8ccaf03647dde2666985819}
+
+
+Function to manually set calibration parameters. Calling this function will disable the automatic calibration and subsequent calls to slot will apply the calibration and call the subscriber. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em amplitude} & Amplitude of sinusoid error \\
+\hline
+\mbox{\tt in}  & {\em phase} & Phase of sinusoidal error \\
+\hline
+\end{DoxyParams}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aa86be4f4d781cad40afab05f40ad78d6}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!set\-Required\-Num\-Samples@{set\-Required\-Num\-Samples}}
+\index{set\-Required\-Num\-Samples@{set\-Required\-Num\-Samples}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{set\-Required\-Num\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}void quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::set\-Required\-Num\-Samples (
+\begin{DoxyParamCaption}
+\item[{double}]{num\-\_\-cals}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_aa86be4f4d781cad40afab05f40ad78d6}
+
+
+Sets number of valid calibrations to be collected before averaging. Validity is determined by change in phase between current sample and previous sample. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em num\-\_\-cals} & Number of calibrations \\
+\hline
+\end{DoxyParams}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a478a432ee011bab690954869f8638ce1}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!set\-Timeout@{set\-Timeout}}
+\index{set\-Timeout@{set\-Timeout}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{set\-Timeout}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Rep , typename Period $>$ void quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::set\-Timeout (
+\begin{DoxyParamCaption}
+\item[{const std\-::chrono\-::duration$<$ Rep, Period $>$ \&}]{timeout}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a478a432ee011bab690954869f8638ce1}
+
+
+Sets timeout for calculating the calibration. If the timeout expires this class will throw an exception. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em timeout} & Timeout. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ac73746735a610fe7f4b9a261f5eabf9f}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!slot@{slot}}
+\index{slot@{slot}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{slot}]{\setlength{\rightskip}{0pt plus 5cm}void quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::slot (
+\begin{DoxyParamCaption}
+\item[{Point\-Cloud\-H\-V\-D\-I\-R\-Ptr const \&}]{pc}
+\end{DoxyParamCaption}
+)}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ac73746735a610fe7f4b9a261f5eabf9f}
+
+
+Slot to be connected as a subscriber to another process. If calibration is not complete, this function will add the point cloud argument to the cloud to be used for calibration. If calibration is complete, this function will apply the calibration and call the next subscriber. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pc} & Point cloud to be processed. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a1b9a418e7547fb16216a839a0f605b47}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D@{A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}}
+\index{A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D@{A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}const double quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-A\-M\-P\-L\-I\-T\-U\-D\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a1b9a418e7547fb16216a839a0f605b47}
+Amplitude threshold dictating if calculating the encoder offset is appropriate. If an encoder calibration returns an amplitude below this value, this class indicates that calibration is complete and applies no calibration to outgoing points. \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a78466d125a2b3c71199e06bb8f433738}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E@{E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}}
+\index{E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E@{E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-E\-N\-C\-O\-D\-E\-R\-\_\-\-C\-O\-U\-N\-T\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a78466d125a2b3c71199e06bb8f433738}
+Once the motor has reached stead-\/state, the number of encoder counts per revolution should be roughly the firing rate divided by the frame rate. This number is how many counts the current revolution can be within the theoretical steady-\/state number of encoder counts. \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a76aedeeacc4ac54b5fa1324a144abaf6}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E@{F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E}}
+\index{F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E@{F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}const double quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-F\-I\-R\-I\-N\-G\-\_\-\-R\-A\-T\-E\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a76aedeeacc4ac54b5fa1324a144abaf6}
+The firing rate of the Li\-D\-A\-R, in Hz \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ab42e578d8a1c168e7d75506faad03dc2}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V@{M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}}
+\index{M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V@{M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}]{\setlength{\rightskip}{0pt plus 5cm}const int quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-M\-A\-X\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_ab42e578d8a1c168e7d75506faad03dc2}
+Maximum number of encoder angles to qualify full revolution at steady-\/state motor speed \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_abe79c88a1e3a3e42796a225e34c1d67f}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V@{M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}}
+\index{M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V@{M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V}]{\setlength{\rightskip}{0pt plus 5cm}const int quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-M\-I\-N\-\_\-\-E\-N\-C\-O\-D\-E\-R\-\_\-\-A\-N\-G\-L\-E\-S\-\_\-\-P\-E\-R\-\_\-\-R\-E\-V\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_abe79c88a1e3a3e42796a225e34c1d67f}
+Minimum number of encoder angles to qualify full revolution at steady-\/state motor speed \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0d42f1ff560d67d491511970960f0cfa}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D@{M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D}}
+\index{M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D@{M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}const int quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-M\-O\-V\-\_\-\-A\-V\-G\-\_\-\-P\-E\-R\-I\-O\-D\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a0d42f1ff560d67d491511970960f0cfa}
+Moving average period to use when smoothing error signal, in encoder counts \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a12436409c1f1f10f4c005e45fcfbfbf2}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D@{P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}}
+\index{P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D@{P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}const double quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-P\-H\-A\-S\-E\-\_\-\-C\-O\-N\-V\-E\-R\-G\-E\-N\-C\-E\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a12436409c1f1f10f4c005e45fcfbfbf2}
+Tolerance for identifying when phase values have converged without outliers \hypertarget{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a934b8f1f5c14ed61c7ba6bc5e01ddd5b}{\index{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}!P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E@{P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}}
+\index{P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E@{P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}!quanergy::calibration::EncoderAngleCalibration@{quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration}}
+\subsubsection[{P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}const double quanergy\-::calibration\-::\-Encoder\-Angle\-Calibration\-::\-P\-I\-\_\-\-T\-O\-L\-E\-R\-A\-N\-C\-E\hspace{0.3cm}{\ttfamily [static]}}}\label{structquanergy_1_1calibration_1_1EncoderAngleCalibration_a934b8f1f5c14ed61c7ba6bc5e01ddd5b}
+Allowable tolerance within pi for an endpoint-\/angle in a revolution to be considered near pi 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+encoder\-\_\-angle\-\_\-calibration.\-h\end{DoxyCompactItemize}

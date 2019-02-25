@@ -1,0 +1,101 @@
+\hypertarget{structquanergy_1_1client_1_1PacketParserBase}{\section{quanergy\-:\-:client\-:\-:Packet\-Parser\-Base$<$ R\-E\-S\-U\-L\-T $>$ Struct Template Reference}
+\label{structquanergy_1_1client_1_1PacketParserBase}\index{quanergy\-::client\-::\-Packet\-Parser\-Base$<$ R\-E\-S\-U\-L\-T $>$@{quanergy\-::client\-::\-Packet\-Parser\-Base$<$ R\-E\-S\-U\-L\-T $>$}}
+}
+
+
+base class for packet parsers  
+
+
+
+
+{\ttfamily \#include $<$packet\-\_\-parser.\-h$>$}
+
+Inheritance diagram for quanergy\-:\-:client\-:\-:Packet\-Parser\-Base$<$ R\-E\-S\-U\-L\-T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structquanergy_1_1client_1_1PacketParserBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{structquanergy_1_1client_1_1PacketParserBase_ace6f4bff879bd05ec7dbc670802f70c9}{validate\-Parse} (const std\-::vector$<$ char $>$ \&packet, R\-E\-S\-U\-L\-T \&result)
+\begin{DoxyCompactList}\small\item\em check packet validity and parse if a match \end{DoxyCompactList}\item 
+virtual bool \hyperlink{structquanergy_1_1client_1_1PacketParserBase_ad840fd4e7f3ab054024957ae1d94ffa1}{validate} (const std\-::vector$<$ char $>$ \&packet)=0
+\begin{DoxyCompactList}\small\item\em check packet validity \end{DoxyCompactList}\item 
+virtual bool \hyperlink{structquanergy_1_1client_1_1PacketParserBase_a4a0555355f550738007edf7994da1c8c}{parse} (const std\-::vector$<$ char $>$ \&packet, R\-E\-S\-U\-L\-T \&result)=0
+\begin{DoxyCompactList}\small\item\em parse packet and update result \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class R\-E\-S\-U\-L\-T$>$struct quanergy\-::client\-::\-Packet\-Parser\-Base$<$ R\-E\-S\-U\-L\-T $>$}
+
+base class for packet parsers 
+
+\subsection{Member Function Documentation}
+\hypertarget{structquanergy_1_1client_1_1PacketParserBase_a4a0555355f550738007edf7994da1c8c}{\index{quanergy\-::client\-::\-Packet\-Parser\-Base@{quanergy\-::client\-::\-Packet\-Parser\-Base}!parse@{parse}}
+\index{parse@{parse}!quanergy::client::PacketParserBase@{quanergy\-::client\-::\-Packet\-Parser\-Base}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R\-E\-S\-U\-L\-T$>$ virtual bool {\bf quanergy\-::client\-::\-Packet\-Parser\-Base}$<$ R\-E\-S\-U\-L\-T $>$\-::parse (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ char $>$ \&}]{packet, }
+\item[{R\-E\-S\-U\-L\-T \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{structquanergy_1_1client_1_1PacketParserBase_a4a0555355f550738007edf7994da1c8c}
+
+
+parse packet and update result 
+
+\begin{DoxyReturn}{Returns}
+true if result updated; false otherwise (some parsers may require multiple packets before updating result) 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_af66c0c1212314c43f6a183e7a4711e44}{quanergy\-::client\-::\-Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$}, \hyperlink{structquanergy_1_1client_1_1DataPacketParser04_a62df767eabc53340282c4f3cb5fec9e0}{quanergy\-::client\-::\-Data\-Packet\-Parser04}, \hyperlink{structquanergy_1_1client_1_1DataPacketParser00_aceab95c7e5553724883adad72485d080}{quanergy\-::client\-::\-Data\-Packet\-Parser00}, and \hyperlink{structquanergy_1_1client_1_1DataPacketParser01_a5873c64ebd1b6261e6c6ec8694ab0061}{quanergy\-::client\-::\-Data\-Packet\-Parser01}.
+
+\hypertarget{structquanergy_1_1client_1_1PacketParserBase_ad840fd4e7f3ab054024957ae1d94ffa1}{\index{quanergy\-::client\-::\-Packet\-Parser\-Base@{quanergy\-::client\-::\-Packet\-Parser\-Base}!validate@{validate}}
+\index{validate@{validate}!quanergy::client::PacketParserBase@{quanergy\-::client\-::\-Packet\-Parser\-Base}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R\-E\-S\-U\-L\-T$>$ virtual bool {\bf quanergy\-::client\-::\-Packet\-Parser\-Base}$<$ R\-E\-S\-U\-L\-T $>$\-::validate (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ char $>$ \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{structquanergy_1_1client_1_1PacketParserBase_ad840fd4e7f3ab054024957ae1d94ffa1}
+
+
+check packet validity 
+
+\begin{DoxyReturn}{Returns}
+true if valid, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_a5b53284ba762fc0d9355d28f552bd674}{quanergy\-::client\-::\-Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$}, \hyperlink{structquanergy_1_1client_1_1DataPacketParser04_a4f8566ff529171e458ab2139c9098403}{quanergy\-::client\-::\-Data\-Packet\-Parser04}, \hyperlink{structquanergy_1_1client_1_1DataPacketParser00_ac161241641118826d0514d293f7d6538}{quanergy\-::client\-::\-Data\-Packet\-Parser00}, and \hyperlink{structquanergy_1_1client_1_1DataPacketParser01_a0a28a9b2fecdd1cbb0afb8df05e1f90e}{quanergy\-::client\-::\-Data\-Packet\-Parser01}.
+
+\hypertarget{structquanergy_1_1client_1_1PacketParserBase_ace6f4bff879bd05ec7dbc670802f70c9}{\index{quanergy\-::client\-::\-Packet\-Parser\-Base@{quanergy\-::client\-::\-Packet\-Parser\-Base}!validate\-Parse@{validate\-Parse}}
+\index{validate\-Parse@{validate\-Parse}!quanergy::client::PacketParserBase@{quanergy\-::client\-::\-Packet\-Parser\-Base}}
+\subsubsection[{validate\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class R\-E\-S\-U\-L\-T$>$ virtual bool {\bf quanergy\-::client\-::\-Packet\-Parser\-Base}$<$ R\-E\-S\-U\-L\-T $>$\-::validate\-Parse (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ char $>$ \&}]{packet, }
+\item[{R\-E\-S\-U\-L\-T \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{structquanergy_1_1client_1_1PacketParserBase_ace6f4bff879bd05ec7dbc670802f70c9}
+
+
+check packet validity and parse if a match 
+
+\begin{DoxyReturn}{Returns}
+true if result updated; false otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{structquanergy_1_1client_1_1InvalidPacketError}{Invalid\-Packet\-Error}} & if not a valid packet \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \hyperlink{structquanergy_1_1client_1_1VariadicPacketParser_a58a6ec899ab3ee7f2fbd92b4d45082eb}{quanergy\-::client\-::\-Variadic\-Packet\-Parser$<$ R\-E\-S\-U\-L\-T, P\-A\-R\-S\-E\-R\-S $>$}.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{packet__parser_8h}{packet\-\_\-parser.\-h}\end{DoxyCompactItemize}

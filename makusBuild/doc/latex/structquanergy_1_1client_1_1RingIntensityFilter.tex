@@ -1,0 +1,44 @@
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter}{\section{quanergy\-:\-:client\-:\-:Ring\-Intensity\-Filter Struct Reference}
+\label{structquanergy_1_1client_1_1RingIntensityFilter}\index{quanergy\-::client\-::\-Ring\-Intensity\-Filter@{quanergy\-::client\-::\-Ring\-Intensity\-Filter}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_afa4e8d4876b188636c17907094f54d62}{typedef std\-::shared\-\_\-ptr\\*
+$<$ \hyperlink{structquanergy_1_1client_1_1RingIntensityFilter}{Ring\-Intensity\-Filter} $>$ {\bfseries Ptr}}\label{structquanergy_1_1client_1_1RingIntensityFilter_afa4e8d4876b188636c17907094f54d62}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_a96b133d31719924d92f567ee44056f9e}{typedef Point\-Cloud\-H\-V\-D\-I\-R\-Ptr {\bfseries Result\-Type}}\label{structquanergy_1_1client_1_1RingIntensityFilter_a96b133d31719924d92f567ee44056f9e}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_a33b71b3190f08792388ac6e37767f247}{typedef \\*
+boost\-::signals2\-::signal$<$ void(const \\*
+Result\-Type \&)$>$ {\bfseries Signal}}\label{structquanergy_1_1client_1_1RingIntensityFilter_a33b71b3190f08792388ac6e37767f247}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_af75a25cc369048128e88ad91578f624a}{boost\-::signals2\-::connection {\bfseries connect} (const T\-Y\-P\-E\-N\-A\-M\-E Signal\-::slot\-\_\-type \&subscriber)}\label{structquanergy_1_1client_1_1RingIntensityFilter_af75a25cc369048128e88ad91578f624a}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_afc344fd2d49bd478ddbd54115162b0ce}{void {\bfseries slot} (Point\-Cloud\-H\-V\-D\-I\-R\-Const\-Ptr const \&)}\label{structquanergy_1_1client_1_1RingIntensityFilter_afc344fd2d49bd478ddbd54115162b0ce}
+
+\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_aafbba638a6d327081160ee286b2904e9}{float \hyperlink{structquanergy_1_1client_1_1RingIntensityFilter_aafbba638a6d327081160ee286b2904e9}{get\-Ring\-Filter\-Minimum\-Range\-Threshold} (const std\-::uint16\-\_\-t laser\-\_\-beam) const }\label{structquanergy_1_1client_1_1RingIntensityFilter_aafbba638a6d327081160ee286b2904e9}
+
+\begin{DoxyCompactList}\small\item\em For ring filtering\-: Returns the minimum range filter threshold for the given beam, in meters. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_ada863df252c1fa6d5179464acc515ae5}{void \hyperlink{structquanergy_1_1client_1_1RingIntensityFilter_ada863df252c1fa6d5179464acc515ae5}{set\-Ring\-Filter\-Minimum\-Range\-Threshold} (const std\-::uint16\-\_\-t laser\-\_\-beam, const float min\-\_\-threshold)}\label{structquanergy_1_1client_1_1RingIntensityFilter_ada863df252c1fa6d5179464acc515ae5}
+
+\begin{DoxyCompactList}\small\item\em For ring filtering\-: Set the minimum range filter threshold for the given beam, in meters This value is in meters. Defaults to 1.\-0. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_ae872b5db1be0f7fdf068f23a01729a19}{uint8\-\_\-t \hyperlink{structquanergy_1_1client_1_1RingIntensityFilter_ae872b5db1be0f7fdf068f23a01729a19}{get\-Ring\-Filter\-Minimum\-Intensity\-Threshold} (const std\-::uint16\-\_\-t laser\-\_\-beam) const }\label{structquanergy_1_1client_1_1RingIntensityFilter_ae872b5db1be0f7fdf068f23a01729a19}
+
+\begin{DoxyCompactList}\small\item\em For ring filtering\-: Returns the minimum intensity filter threshold for the given beam. \end{DoxyCompactList}\item 
+\hypertarget{structquanergy_1_1client_1_1RingIntensityFilter_a8e3e385038a4cba1f079012c0208f76d}{void \hyperlink{structquanergy_1_1client_1_1RingIntensityFilter_a8e3e385038a4cba1f079012c0208f76d}{set\-Ring\-Filter\-Minimum\-Intensity\-Threshold} (const uint16\-\_\-t laser\-\_\-beam, const uint8\-\_\-t min\-\_\-threshold)}\label{structquanergy_1_1client_1_1RingIntensityFilter_a8e3e385038a4cba1f079012c0208f76d}
+
+\begin{DoxyCompactList}\small\item\em For ring filtering\-: Set the minimum intensity filter threshold for the given beam, in meters This value is an integer between 0-\/255. Defaults to 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ring__intensity__filter_8h}{ring\-\_\-intensity\-\_\-filter.\-h}\end{DoxyCompactItemize}

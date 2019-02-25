@@ -1,0 +1,81 @@
+/****************************************************************
+ **                                                            **
+ **  Copyright(C) 2016 Quanergy Systems. All Rights Reserved.  **
+ **  Contact: http://www.quanergy.com                          **
+ **                                                            **
+ ****************************************************************/
+
+#include "vis_module_octree.h"
+
+#include <chrono>
+#include <thread>
+#include <iostream>
+
+#include <pcl/point_cloud.h>
+#include <pcl/octree/octree_pointcloud.h>
+#include <pcl/octree/octree_search.h>
+//#include <pcl/octree/octree_viewer.h>
+#include <pcl/io/pcd_io.h>
+
+#include <octomap/octomap.h>
+
+
+VisualizerModule_oct::VisualizerModule_oct()
+  : viewer_oct("octree Viewer")
+{
+  /// basic visualization setup
+#if (PCL_MAJOR_VERSION == 1 && PCL_MINOR_VERSION == 7 && PCL_REVISION_VERSION <= 2)
+  viewer_oct.addCoordinateSystem(1.0);
+#else
+  viewer_oct.addCoordinateSystem (1.0, "global");
+#endif
+  viewer_oct.setBackgroundColor (0, 0, 0);
+  viewer_oct.initCameraParameters ();
+  viewer_oct.setCameraPosition (0.0, 0.0, 30.0, 0.0, 1.0, 0.0, 0);
+  viewer_oct.setCameraClipDistances (0.0, 50.0);
+}
+
+
+void VisualizerModule_oct::slot(const quanergy::PointCloudXYZIRConstPtr& new_cloud)
+{
+  pcl::visualization::PointCloudColorHandlerGenericField<quanergy::PointXYZIR> color_handler(new_cloud, "intensity");
+	
+  // don't block if visualizer isn't available
+  if (octree_mutex.try_lock_for(std::chrono::milliseconds(10)))
+  {
+    if (!viewer_oct.updatePointCloud<quanergy::PointXYZIR>(new_cloud, color_handler, new_cloud->header.frame_id))
+    {
+      viewer_oct.addPointCloud<quanergy::PointXYZIR>(new_cloud, color_handler, new_cloud->header.frame_id);
+    }
+    octree_mutex.unlock();
+
+	/*	
+	float resolution = 128.0f;
+	pcl::octree::OctreePointCloudSearch<quanergy::PointXYZIR> octree (resolution);
+	octree.setInputCloud (new_cloud);
+	octree.addPointsFromInputCloud ();
+	*/
+
+	octomap::OccupancyOcTreeBase<0,0,0>::insertPointCloud (new_cloud, (0,0,0));
+  }
+
+}
+
+/** \brief run the application */
+void VisualizerModule_oct::run()
+{
+  /// spin loop for updating visualizer
+  while (!viewer_oct.wasStopped())
+  {
+    std::unique_lock<std::timed_mutex> lock(octree_mutex);
+    viewer_oct.spinOnce();
+    lock.unlock();
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
+  }
+}
+
+/** \brief stop the application */
+void VisualizerModule_oct::stop()
+{
+  viewer_oct.close();
+}

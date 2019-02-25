@@ -1,0 +1,108 @@
+\hypertarget{classFilesaveModule}{\section{Filesave\-Module Class Reference}
+\label{classFilesaveModule}\index{Filesave\-Module@{Filesave\-Module}}
+}
+
+
+A module that saves the received point cloud and a corresponding image.  
+
+
+
+
+{\ttfamily \#include $<$filesave\-\_\-module.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classFilesaveModule_a268eda9476b90bc83b551c50eb7c67fe}{Data\-Type} \{ {\bfseries Binary}, 
+{\bfseries Text}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum that sets the data type of saved point cloud. \end{DoxyCompactList}\item 
+enum \hyperlink{classFilesaveModule_a5c70900e45fc43e441b55ba02fd3ae21}{Timestamp\-Type} \{ {\bfseries None}, 
+{\bfseries Unix}, 
+{\bfseries System}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum that sets the timestamp type of saved point cloud and image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFilesaveModule_a10fd3e6d356c17b62def14c449fe9d05}{Filesave\-Module} (\hyperlink{classFilesaveModule_a268eda9476b90bc83b551c50eb7c67fe}{Data\-Type} data\-Type, const char $\ast$filename, \hyperlink{classFilesaveModule_a5c70900e45fc43e441b55ba02fd3ae21}{Timestamp\-Type} timestamp\-Type=Timestamp\-Type\-::\-None)
+\begin{DoxyCompactList}\small\item\em Constructor that needs the point cloud data type, a chosen name and the timestamp type. \end{DoxyCompactList}\item 
+\hypertarget{classFilesaveModule_aefc22e7e214dbd2d764fc1b49fa6b909}{\hyperlink{classFilesaveModule_aefc22e7e214dbd2d764fc1b49fa6b909}{$\sim$\-Filesave\-Module} ()}\label{classFilesaveModule_aefc22e7e214dbd2d764fc1b49fa6b909}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{classFilesaveModule_ae01c6ca4cf3cbc17967c24330bc16dd5}{slot} (const quanergy\-::\-Point\-Cloud\-X\-Y\-Z\-I\-R\-Const\-Ptr \&cloud)
+\begin{DoxyCompactList}\small\item\em A function that is called in the boost\-::signals2\-::connection pipeline in the main application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFilesaveModule_a460a7df3d81b88f62f3f7f08d63873cd}{\hyperlink{classFilesaveModule_a268eda9476b90bc83b551c50eb7c67fe}{Data\-Type} {\bfseries \-\_\-data\-Type}}\label{classFilesaveModule_a460a7df3d81b88f62f3f7f08d63873cd}
+
+\item 
+\hypertarget{classFilesaveModule_aa2a6744d6ef434f67c8b40ae37fa0211}{\hyperlink{classFilesaveModule_a5c70900e45fc43e441b55ba02fd3ae21}{Timestamp\-Type} {\bfseries \-\_\-timestamp\-Type}}\label{classFilesaveModule_aa2a6744d6ef434f67c8b40ae37fa0211}
+
+\item 
+\hypertarget{classFilesaveModule_a1eb8c3415e82e328ab70e76f0d9bd321}{char $\ast$ {\bfseries \-\_\-filename}}\label{classFilesaveModule_a1eb8c3415e82e328ab70e76f0d9bd321}
+
+\item 
+\hypertarget{classFilesaveModule_a3bd9f1266fe56307ea0ec12290b0929a}{std\-::string {\bfseries \-\_\-\-Last\-Filename}}\label{classFilesaveModule_a3bd9f1266fe56307ea0ec12290b0929a}
+
+\item 
+\hypertarget{classFilesaveModule_adc0f187162eb4e92559b9f96f7f71ce7}{int {\bfseries Filenumber}}\label{classFilesaveModule_adc0f187162eb4e92559b9f96f7f71ce7}
+
+\item 
+\hypertarget{classFilesaveModule_a5bc2e7a1cf23e1e22339fc832b87d441}{std\-::string $\ast$ {\bfseries Dirname} = nullptr}\label{classFilesaveModule_a5bc2e7a1cf23e1e22339fc832b87d441}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A module that saves the received point cloud and a corresponding image. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFilesaveModule_a10fd3e6d356c17b62def14c449fe9d05}{\index{Filesave\-Module@{Filesave\-Module}!Filesave\-Module@{Filesave\-Module}}
+\index{Filesave\-Module@{Filesave\-Module}!FilesaveModule@{Filesave\-Module}}
+\subsubsection[{Filesave\-Module}]{\setlength{\rightskip}{0pt plus 5cm}Filesave\-Module\-::\-Filesave\-Module (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\-Type}}]{data\-Type, }
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Timestamp\-Type}}]{timestamp\-Type = {\ttfamily TimestampType\-:\-:None}}
+\end{DoxyParamCaption}
+)}}\label{classFilesaveModule_a10fd3e6d356c17b62def14c449fe9d05}
+
+
+Constructor that needs the point cloud data type, a chosen name and the timestamp type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\-Type} & The saved .pcd file will have this format. \\
+\hline
+{\em filename} & If used, a timestamp will be added to the filename for every point cloud. \\
+\hline
+{\em timestamp\-Type} & Unix timestamp is unformatted, System timestamp is formatted. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFilesaveModule_ae01c6ca4cf3cbc17967c24330bc16dd5}{\index{Filesave\-Module@{Filesave\-Module}!slot@{slot}}
+\index{slot@{slot}!FilesaveModule@{Filesave\-Module}}
+\subsubsection[{slot}]{\setlength{\rightskip}{0pt plus 5cm}void Filesave\-Module\-::slot (
+\begin{DoxyParamCaption}
+\item[{const quanergy\-::\-Point\-Cloud\-X\-Y\-Z\-I\-R\-Const\-Ptr \&}]{cloud}
+\end{DoxyParamCaption}
+)}}\label{classFilesaveModule_ae01c6ca4cf3cbc17967c24330bc16dd5}
+
+
+A function that is called in the boost\-::signals2\-::connection pipeline in the main application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cloud} & The received point cloud. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+filesave\-\_\-module.\-h\item 
+filesave\-\_\-module.\-cpp\end{DoxyCompactItemize}

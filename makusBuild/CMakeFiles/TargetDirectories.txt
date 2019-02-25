@@ -1,0 +1,12 @@
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/package.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/package_source.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/test_quanergy_client.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/quanergy_client.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/edit_cache.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/doc.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/visualizer.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/install/local.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/install.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/install/strip.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/list_install_components.dir
+/home/fraunhofer/workspace/QuanergySystems/mauri/quanergy_client/makusBuild/CMakeFiles/rebuild_cache.dir
